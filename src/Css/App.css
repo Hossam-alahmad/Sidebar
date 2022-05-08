@@ -1,0 +1,42 @@
+.sidebar-app .home .navbar .menu-icon {
+    font-size: 3rem;
+    cursor: pointer;
+}
+.sidebar-app .home .content {
+    transform: translate(-50%, -50%);
+}
+.sidebar-app .sidebar {
+    z-index: 10000;
+    width: 300px;
+    height: 100vh;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(-100%);
+}
+.sidebar-app .sidebar.show-sidebar {
+    transform: translateX(0);
+}
+.sidebar-app .sidebar .close-icon .icon {
+    cursor: pointer;
+}
+.sidebar-app .sidebar .nav-brand {
+    font-size: 2rem;
+}
+.sidebar-app .sidebar .links ul li {
+    transition: background-color 0.2s ease-in-out;
+}
+.sidebar-app .sidebar .links ul li:hover {
+    background-color: rgb(241, 241, 241);
+}
+.sidebar-app .model {
+    visibility: hidden;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    transition: all 0.2s ease-in-out;
+}
+.sidebar-app .model.show-model {
+    visibility: visible;
+    opacity: 1;
+}
+button.btn:focus {
+    box-shadow: none;
+}
